@@ -6,6 +6,7 @@ This repository contains the implementation of our final project for **CS 484** 
 1. [Project Overview](#project-overview)
 2. [Key Features](#key-features)
 3. [Technologies Used](#technologies-used)
+4. [Results](#results)
 
 ## Project Overview
 As Machine Learning (ML) becomes more widely used, the risks of attacks like data poisoning grow. This project focuses on defending against **poisoning attacks** in **Federated Learning (FL)**, where users with access to local data can intentionally introduce harmful data to degrade the performance of the global model.
@@ -24,3 +25,11 @@ We proposed a defense mechanism using **K-means clustering** and **Local Differe
 - **NumPy** (for data manipulation)
 - **Matplotlib** (for data visualization)
 
+## Results
+
+The defense mechanism was tested on two datasets: **MNIST** and **CIFAR-10**. Below are key findings:
+
+- As the percentage of poisoned data increased, the silhouette scores dropped, indicating that the clustering model was affected by poisoning.
+- The accuracy remained relatively stable even with higher proportions of poisoned data, but the silhouette score showed significant degradation.
+
+For further details, see the project report.
